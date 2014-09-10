@@ -58,9 +58,9 @@ public class BattleFieldTemplate2 extends JPanel {
 	
 
 	boolean processInterception() {
-		String coord = getQuadrant(bulletX, bulletY);
-		int x = Integer.parseInt(coord.split("_")[0]);
-		int y = Integer.parseInt(coord.split("_")[1]);
+		String coord = getQuadrant(bulletY, bulletX);
+		int y = Integer.parseInt(coord.split("_")[0]);
+		int x = Integer.parseInt(coord.split("_")[1]);
 		if (y >= 0 && y < 9 && x >= 0 && x < 9) {
 			if (!battleField[y][x].trim().isEmpty()) {
 				System.out.println(x + " : " + y);
