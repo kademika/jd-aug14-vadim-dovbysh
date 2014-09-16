@@ -3,7 +3,7 @@ package day5_tanks_inharitance;
 public class DemoTanks {
 
 	public static void main(String[] args) {
-		Tank tank = new Tank();
+		
 		BT7 bt7 = new BT7();
 		T34 t34 = new T34();
 		Tiger tiger = new Tiger();
